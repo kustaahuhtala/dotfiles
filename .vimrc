@@ -93,8 +93,8 @@ filetype plugin indent on
 vmap <C-x> :!pbcopy<CR>  
 vmap <C-c> :w !pbcopy<CR><CR> 
 
-set mouse=nicr
+"set mouse=nicr
 nmap =j :%!python -c "import json, sys, collections; print json.dumps(json.load(sys.stdin, object_pairs_hook=collections.OrderedDict), indent=4)"<CR>
 " nmap =j :%!python -m json.tool<CR>
 
-set clipboard=unnamedplus
+set clipboard=unnamed
